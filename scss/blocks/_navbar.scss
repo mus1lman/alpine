@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+
+  &__list {
+    display: flex;
+    @extend %list-nostyle;
+  }
+
+  &__item ~ &__item {
+    margin-left: 30px;
+  }
+
+  &__link {
+    font-family: "Paytone One";
+    text-transform: uppercase;
+    @include linkStyle(none, 18px, 25px, #ffffff);
+    font-weight: 400;
+    transition: all 0.5s ease;
+    
+    &:hover {
+      color: #ff0000;
+      text-decoration: underline;
+    }
+  }
+}

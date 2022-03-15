@@ -1,0 +1,359 @@
+
+// =======================  SECTION BIG  =====================
+
+.big-wrapper {
+  transform: translateY(-608px);
+  width: 994px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, rgba(50, 42, 39, 0) 0%, rgba(45, 40, 40, 0.85) 33.85%, #2D2828 49.48%, #2D2828 68.75%, #2D2828 82.29%, #2D2828 100%);
+}
+
+.intro {
+  padding-top: 76px;
+  padding-left: 65px;
+
+  &__content  {
+    width: 434px;
+  }
+
+  &__heading {
+    font-family: "Paytone One";
+    font-size: 64px;
+    line-height: 89px;
+    color: #ffffff;
+  }
+
+  &__heading--span {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    display: block;
+    font-family: "Paytone One";
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+}
+
+
+.intro__heading--span {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: block;
+  font-family: "Paytone One";
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.intro__text {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: #FFFFFF;
+}
+
+.intro__question  {
+  margin-bottom: 79px;
+}
+
+.question__input-email {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.4);
+  margin-right: 20px;
+  padding: 9px 13px 9px 35px;
+  font-family: "Pavanam";
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.question__btn {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 9px 21px;
+  font-family: "Pavanam";
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 50px;
+  border: 2px solid #ff1640;
+}
+
+.underline {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+// =============================     NETWORKS   =====================
+.networks {
+  padding: 31px 101px 31px 67px;
+  &__list {
+    @include flex(center, space-between);
+    @extend %list-nostyle;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__link:hover &__img {
+    transform: scale(1.5);
+  }
+
+  &__img {
+    display: block;
+  }
+}
+
+.img-facebook {
+  width: 83px;
+  height: 18px;
+}
+
+.img-instagram {
+  width: 92px;
+  height: 26px;
+}
+
+.img-twitter {
+  width: 71px;
+  height: 14px;
+}
+
+.img-youtube {
+  width: 79px;
+  height: 15px;
+}
+
+.img-pinterest {
+  width: 89px;
+  height: 38px;
+}
+
+.img-google {
+  width: 57px;
+  height: 24px;
+}
+
+// ====================================     MARKETING     ================
+.marketings {
+  margin-top: 140px;
+  margin-bottom: 60px;
+  padding-right: 85px;
+  padding-left: 67px;
+
+  &__list {
+    position: relative;
+    @include flex(center, space-between);
+    @extend %list-nostyle;
+  }
+
+  .marcetings__item-position {
+    position: absolute;
+    top: -80px;
+    left: 260px;
+  }
+
+  &__item-img {
+    width: 313px;
+    height: 262px;
+  }
+}
+
+// ==================================== DIV MarketingBox ======================
+.marketingbox {
+  padding-right: 85px;
+  padding-left: 67px;
+  color: #ffffff;
+}
+
+.commentlink {
+  @include flex(center, center);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+
+  &__heading {
+    font-family: "Paytone One";
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+
+  &__span {
+    margin-right: 10px;
+    margin-left: 6px;
+    width: 266px;
+    border-top: 1px dashed rgb(255, 255, 255);
+  }
+
+  &__comlink {
+    margin-right: 6px;
+  }
+
+  &__comlink-img {
+    width: 22px;
+    height: 21px;
+  }
+
+  &__startlink {
+    padding: 8px 16px;
+    background: linear-gradient(180deg, #864A23 0%, #6A3A1B 100%);
+    border-radius: 20px;
+    @include linkStyle(none, 14px, 20px, #ffffff);
+    font-weight: 600;
+  }
+
+  &__startlink-img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.notification {
+  margin-bottom: 70px;
+
+  &__top {
+    width: 460px;
+    @include flex(center, space-between);
+    margin-bottom: 25px;
+  }
+  
+  &__top-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 149.8%;
+  }
+
+  &__top-link {
+    @include flex(center, space-between);
+    @include linkStyle(none, 16px, 149.8%, #2d2828);
+    background: url(../../img/bcg-main.png), #C4C4C4;
+    border-radius: 50px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-right: 14px;
+    padding-left: 10px;
+  }
+
+  &__body {
+    @include flex(flex-start, space-between);
+  }
+
+  &__userinfo {
+    width: 460px;
+    margin-right: 70px;
+    padding: 14px 16px 23px 17px;
+    @include flex(flex-start, space-between);
+    background-image: url("../../img/bcg-marketing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__userprofile {
+    position: relative;
+    width: 146px;
+    @include flex(flex-start, space-between);
+    margin-right: 30px;
+  }
+
+  &__user-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  &__user-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 149.8%;
+    color: #2D2828;
+  }
+
+  &__user-status {
+    font-size: 18px;
+    line-height: 149.8%;
+    color: rgba(45, 40, 40, 0.7);
+  }
+
+  &__opinion {
+    width: 251px;
+  }
+
+  &__opinion-heading {
+    margin-top: 5px;
+    margin-bottom: 11px;
+    font-size: 22px;
+    line-height: 149.8%;
+    color: #2D2828;
+  }
+
+  &__opinion-text {
+    font-size: 14px;
+    line-height: 149.8%;
+    color: #2D2828;
+  }
+
+  &__content-heading {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 149.8%;
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+
+  &__content-text {
+    font-size: 14px;
+    line-height: 149.8%;
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+}
+
+.unnot::before {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #ff1640;
+  border-radius: 50%;
+  content: "1";
+}
+
+.link-img-disall {
+  width: 28px;
+  height: 27px;
+  margin-right: 8px;
+}
+
+.userprofile-first::after {
+  display: inline-block;
+  position: absolute;
+  margin-top: 37px;
+  margin-left: 37px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/icons-file-type-clojure.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  content: "";
+}
+
+.userprofile-second::after {
+  display: inline-block;
+  position: absolute;
+  margin-top: 37px;
+  margin-left: 37px;
+  width: 23px;
+  height: 22px;
+  background-image: url("../../images/icons-cljs.png");
+  background-repeat: no-repeat;
+  background-size: 23px 22px;
+  content: "";
+}

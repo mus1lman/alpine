@@ -1,0 +1,76 @@
+// ============================== SECTION BRANDS ====================
+.brands {
+  width: 994px;
+  margin-top: -605px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 85px;
+  padding-left: 67px;
+  padding-bottom: 100px;
+
+  &__box {
+    @include flex(center, space-between);
+  }
+
+  &__img-glossier {
+    width: 162px;
+    height: 55px;
+  }
+
+  &__img-aspire {
+    width: 154px;
+    height: 154px;
+  }
+
+  &__img-nylas {
+    width: 157px;
+    height: 53px;
+  }
+
+  &__img-bitwise {
+    width: 177px;
+    height: 118px;
+  }
+
+  &__list {
+    @extend %list-nostyle;
+    @include flex(center, space-between);
+  }
+
+  &__item ~ &__item {
+    margin-left: 24px;
+  }
+
+  &__avatar {
+    margin-bottom: 22px;
+    @include flex(center, flex-start);
+  }
+
+  &__avatar-img {
+    width: 90px;
+    height: 92px;
+    margin-right: 7px;
+  }
+
+  &__item-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 149.8%;
+    color: #000000;
+  }
+}
+
+.company-symmetric {
+  width: 143px;
+  height: 34px;
+}
+
+.company-md {
+  width: 191px;
+  height: 52px;
+}
+
+.company-envie {
+  width: 106px;
+  height: 52px;
+}

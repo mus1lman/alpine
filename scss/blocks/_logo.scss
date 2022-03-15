@@ -1,0 +1,15 @@
+.site-logo {
+  display: inline-block;  
+  margin-right: 70px;
+    @include linkStyle(none, none, none, none);
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.2);
+  }
+}
+
+.site-logo__img {
+  display: block;
+  width: 143px;
+  height: 59px;
+}

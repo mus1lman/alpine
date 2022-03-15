@@ -1,0 +1,14 @@
+// ================================ HEADER ========================
+
+.header-wrap {
+  background-image: url("../../img/bcg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__inner {
+  padding-top: 51px;
+  padding-bottom: 680px;
+  @include flex(center, start);
+}
